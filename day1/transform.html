@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 16px;
+        }
+
+        .translate>div {
+            background-color: seagreen;
+        }
+
+        .skew>div {
+            background-color: royalblue;
+        }
+
+        .scale>div {
+            background-color: chartreuse;
+        }
+
+        .rotate_box>div {
+            background-color: crimson;
+        }
+
+        .translateX {
+            transform: translateX(-50%);
+        }
+
+        .translateY {
+            transform: translateY(100px);
+        }
+
+        .translateA {
+            transform: translate(50px, -20px);
+        }
+
+        .skewX {
+            transform: skewX(50deg);
+        }
+
+        .skewY {
+            transform: skewY(-30deg);
+        }
+
+        .skewA {
+            transform: skew(-20deg, 40deg);
+        }
+
+        .scaleX {
+            transform: scaleX(2);
+        }
+
+        .scaleY {
+            transform: scaleY(0.5);
+        }
+
+        .scaleA {
+            transform: scale(0.3, 1.2);
+        }
+
+        .rotate {
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <article class="translate">
+        <div class="translateX"></div>
+        <div class="translateY"></div>
+        <div class="translateA"></div>
+    </article>
+
+    <article class="skew">
+        <div class="skewX"></div>
+        <div class="skewY"></div>
+        <div class="skewA"></div>
+    </article>
+
+    <article class="scale">
+        <div class="scaleX"></div>
+        <div class="scaleY"></div>
+        <div class="scaleA"></div>
+    </article>
+
+    <article class="rotate_box">
+        <div class="rotate"></div>
+    </article>
+
+</body>
+
+</html>
