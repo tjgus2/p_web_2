@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>흔들리는 버튼</title>
+    <style>
+        button {
+            border: none;
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 16px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        button:hover{
+            animation-name: hover_button;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes hover_button {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            30% {
+                transform: rotate(30deg);
+            }
+
+            70% {
+                transform: rotate(-35deg);
+            }
+
+            100% {
+                transform: rotate(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>호버시 버튼이 흔들려요</button>
+    </div>
+</body>
+</html>

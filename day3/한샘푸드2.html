@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(235, 170, 170);
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text_area > h2 {
+            font-size: 36px;
+            font-weight: 900;
+            padding: 16px;
+        }
+        
+        .text_area > p {
+            padding: 0 16px;
+            font-weight: 400;
+        }
+
+        img {
+            position: absolute;
+            display: block;
+            bottom: -50px;
+            right: 10px;
+            transition: 0.5s
+        }
+
+        section:hover img {
+            transform: translateY(-30px);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="text_area">
+            <h2>10+</h2>
+            <p>
+                10가지의 다양한 반찬 제공으로<br>
+                한끼의 식사도 정성스럽게
+            </p>
+        </div>
+        <img src="./한샘푸드2.png" alt="">
+    </section>
+    
+</body>
+</html>
