@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e5a50b0b7c.js" crossorigin="anonymous"></script>
+    <title>plus to close</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: burlywood;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 16px;
+            color: aliceblue;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 5px 16px;
+        }
+
+        button {
+            border: none;
+            background: none;
+        }
+
+        button > i {
+            color: aliceblue;
+        }
+
+        button:hover i{
+            animation-name: shake;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes shake {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(225deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <i></i>
+        <button>
+            <i class="fa-solid fa-plus fa-2xl"></i>
+        </button>
+    </header>
+    
+</body>
+</html>

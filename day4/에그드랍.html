@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 80px 0;
+        }
+
+        @font-face {
+            font-family: 'Cafe24Nyangi-W-v1.0';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-W-v1.0.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Freesentation-9Black';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+            font-style: normal;
+        }
+
+        section {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        h2 {
+            font-family: 'Cafe24Nyangi-W-v1.0';
+            text-align: center;
+            position: absolute;
+            top: -50px;
+            width: 100%;
+            font-weight: 900;
+            font-size: 64px;
+            z-index: 1;
+        }
+
+        .text_area {
+            margin: auto 16px; 
+        }
+
+        .text_area > h3 {
+            font-weight: 900;
+            font-size: 24px;
+            font-family: 'Freesentation-9Black';
+            padding: 5px;
+        }
+
+        figure img {
+            animation-name: img_left_show;
+            animation-duration: 1s;
+        }
+
+        @keyframes img_left_show {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Egg Makes Better</h2>
+        <figure>
+            <img src="./에그드랍.jpg" alt="">
+        </figure>
+        <div class="text_area">
+            <h3>일상의 수준을 높이다</h3>
+            <p>
+                현대인에게 필요한 비타민, 철분, <br>
+                아미노산 등의 풍부한 영양소가 함유된 <br>
+                프리미엄 무 항생제 계란만 엄격하게 <br>
+                사용한 맛있는 스크럼블 에그로 건강한 <br>
+                한 끼를 요리합니다. <br><br>
+
+                우리에게 익숙한 샌드위치에서 신선한 <br>
+                재료와 감각적인 모양으로 한 단계 <br>
+                업그레이드 된 계란 샌드위치라는 <br>
+                카테고리를 새롭게 창조하였습니다 <br>
+            </p>
+        </div>
+    </section>
+</body>
+</html>
