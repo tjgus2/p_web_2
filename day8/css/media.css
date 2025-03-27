@@ -1,0 +1,26 @@
+@media (max-width: 730px) {
+    .header_top>nav>ul>li>a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header_top>nav>ul>li,
+    .header_bottom > .bottom_right_text>ul>li:first-child,
+    .header_bottom > .bottom_right_text>ul>li:nth-child(2),
+    .top_right_icon>figure:nth-child(even) {
+        display: none;
+    }
+
+    .header_top {
+        padding: 24px 150px;
+    }
+
+    .header_bottom {
+        padding: 24px 200px;
+    }
+
+    .header_top > .top_right_icon > .hidden_icon {
+        display: block;
+    }
+}
