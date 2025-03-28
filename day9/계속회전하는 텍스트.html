@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계속회전하는 텍스트</title>
+    <style>
+        @font-face {
+            font-family: 'Chosunilbo_myungjo';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        section>div {
+            width: max-content;
+            font-size: 120px;
+            font-family: Chosunilbo_myungjo;
+            padding: 24px;
+        }
+
+        .animation_text_roll1 {
+            animation: roll1 30s 1 linear
+        }
+
+        .animation_text_roll2 {
+            animation: roll2 30s 1 linear;
+        }
+
+        @keyframes roll1 {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes roll2 {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="animation_text_roll1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid quas dolorum natus vero rem, earum
+                dolorem sapiente at quam id sed tempore, soluta recusandae fugit sint impedit facere dicta.
+            </p>
+        </div>
+        <div class="animation_text_roll2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid quas dolorum natus vero rem, earum
+                dolorem sapiente at quam id sed tempore, soluta recusandae fugit sint impedit facere dicta.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
